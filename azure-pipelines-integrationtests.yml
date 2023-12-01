@@ -1,7 +1,7 @@
 jobs:
 - job: Mac
   pool:
-    name: 'AvaloniaMacPool'
+    vmImage: 'macOS-13'
 
   steps:
   - task: UseDotNet@2
