@@ -8,6 +8,7 @@ namespace MobileSandbox
         public MainWindow()
         {
             this.InitializeComponent();
+            this.SystemDecorations = SystemDecorations.None;
 
             //Renderer.DrawFps = true;
             //Renderer.DrawDirtyRects = Renderer.DrawFps = true;

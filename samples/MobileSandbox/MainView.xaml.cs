@@ -16,7 +16,11 @@ namespace MobileSandbox
 
         public void ButtonCommand()
         {
-            Console.WriteLine("Button pressed");
+            if(TopLevel.GetTopLevel(this) is Window window)
+            {
+                var size = window.ClientSize;
+                window.MoveResize(window.Position, size.Inflate(new Avalonia.Thickness(1, 0)));
+            }
         }
     }
 }
